@@ -25,7 +25,7 @@ body {
 
 img {
   max-width: 100%;
-  border-radius: 8px;
+  border-radius: 5px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
 }
 
@@ -37,6 +37,19 @@ img {
   padding-bottom: 7px;
   top: 0;
   background-color: rgba(0, 0, 0, 0.55);
+  animation-name: slidein1;
+  animation-duration: 2.5s;
+}
+
+@keyframes slidein1 {
+  from {
+    left: 0%;
+    width: 100%;
+  }
+  to {
+    left: 100%;
+    width: 300%;
+  }
 }
 
 .logo {
@@ -136,10 +149,25 @@ img {
 
 .slideshow-container {
   box-sizing: border-box;
-  max-width: 950px;
+  max-width: 945px;
+  height: 500px;
   margin-right: auto;
   margin-left: auto;
   margin-top: 95px;
+  animation-name: slidein;
+  animation-duration: 2.5s;
+  animation-delay: 1s;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 .text {
@@ -148,7 +176,7 @@ img {
   font-weight: bold;
   position: relative;
   padding: 8px 12px;
-  bottom: 40px;
+  bottom: 35px;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.4);
 }
@@ -290,18 +318,17 @@ i {
 /* NEWS */
 .news {
   background-color: rgba(0, 0, 0, 0.65);
-  width: 85%;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   border-radius: 7px;
-  padding: 50px;
+  padding: 40px;
 }
 
 .news-content {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
   gap: 10px;
 }
 
@@ -309,7 +336,7 @@ i {
   .news-content {
     flex-direction: column;
     margin-bottom: 20px;
-    width: 80%;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
   }
@@ -347,9 +374,20 @@ i {
 .footer {
   width: 100%;
   text-align: center;
-  padding: 30px;
+  padding: 20px;
   margin-top: 50px;
   background-color: rgba(0, 0, 0, 0.7);
+  animation-name: slideup;
+  animation-duration: 2s;
+}
+
+@keyframes slideup {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 .footer-content {
