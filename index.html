@@ -9,6 +9,7 @@
     <title>AlamNusantara | Home</title>
   </head>
   <body>
+    <div class="container">
 
     <!-- NAVBAR SECTION -->
     <div class="navbar">
@@ -22,7 +23,7 @@
       <div class="nav-menu" id="nav-con">
         <a href="#" class="link nav"><i class="fa-solid fa-house"></i> Home</a>
         <div class="dropdown">
-          <button class="dropbtn">
+          <button class="dropbtn link nav" href="#objects">
             <p class="dd-btn"><i class="fa-solid fa-mountain-sun"></i> Objects&nbsp; <i class="fa fa-caret-down"></i></p>
           </button>
           <div class="dropdown-content">
@@ -56,8 +57,8 @@
     
  
     <br>
-    <div class="container">
-      <!-- SIDEBAR -->
+   
+      <!-- PANEL -->
       <div class="popular">
         <div class="panel">
           <button class="openbtn">
@@ -65,31 +66,37 @@
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="panel-content">
+            
             <a class="object" href="#gili">
               <img src="assets/pantai_gili.jpg" alt="" width="250px" height="150px" />
-              <span class="title">Gili Terawangan</span>
+              <p class="pop-title">Gili Trawangan Beach</p>
             </a>
+            
             <a class="object" href="#bromo">
               <img src="assets/gunung_bromo.jpg" alt="" width="250px" height="150px" />
-              <span class="title">Bromo Mountain</span>
+              <p class="pop-title">Bromo Mountain</p>
             </a>
+           
             <a class="object" href="#tegenungan">
               <img src="assets/waterfall_tegenunganbali.jpg" alt="" width="250px" height="150px" />
-              <span class="title">Tegenungan Waterfall</span>
+              <p class="pop-title">Tegenungan Waterfall</p>
             </a>
+           
             <a class="object" href="#ijen">
               <img src="assets/gunung_ijen.jpg" alt="" width="250px" height="150px" />
-              <span class="title">Ijen Mountain</span>
+              <p class="pop-title">Ijen Mountain</p>
             </a>
+        
             <a class="object" href="#kuta">
               <img src="assets/pantai_kuta.jpg" alt="" width="250px" height="150px" />
-              <span class="title">Kuta Beach</span>
+              <p class="pop-title">Kuta Beach</p>
             </a>
+           
           </div>
         </div>
       </div>
 
-      <!-- SIDEBAR END -->
+      <!-- PANEL END -->
       <br><br>
    
     
@@ -97,11 +104,11 @@
 
     <!-- POST -->
     <div class="post">
-      <div class="objects">
+      <div class="objects" id="objects">
         <p style="text-align: center; margin-bottom: 10px; color: white; font-weight: bold; font-size: larger" id="mountain"><i class="fa-solid fa-mountain"></i> Nusantara's Mountains</p>
         <div class="objects-container">
-          <div class="objects-item">
-            <img src="assets/gunung_bromo.jpg" alt="" width="400" height="300" id="bromo" />
+          <div class="objects-item"  id="bromo">
+            <img src="assets/gunung_bromo.jpg" alt="" width="400px" height="300px" />
             <div class="obj-desc">
               <p style="text-align: center; margin-bottom: 10px; color: white; font-weight: bold; font-size: 18px">Bromo Mountain</p>
               <a href="https://www.google.com/maps/place/Gn.+Bromo/@-7.9424721,112.9442574,15z/data=!3m1!4b1!4m5!3m4!1s0x2dd637aaab794a41:0xada40d36ecd2a5dd!8m2!3d-7.9424936!4d112.9530122!5m1!1e4">
@@ -113,8 +120,8 @@
               </a>
             </div>
           </div>
-          <div class="objects-item">
-            <img src="assets/gunung_ijen.jpg" alt="" width="400" height="300" id="ijen" />
+          <div class="objects-item"  id="ijen">
+            <img src="assets/gunung_ijen.jpg" alt="" width="400px" height="300px" />
             <div class="obj-desc">
               <p style="text-align: center; margin-bottom: 10px; color: white; font-weight: bold; font-size: 18px">Ijen Mountain</p>
               <a href="https://www.google.com/maps/place/Gn.+Ijen/@-8.3124785,113.9804119,15z/data=!3m1!4b1!4m5!3m4!1s0x2dd6af3b4b774857:0xc8e7c7743f9d1f5a!8m2!3d-8.3125!4d113.9891667!5m1!1e4">
@@ -127,7 +134,7 @@
             </div>
           </div>
           <div class="objects-item">
-            <img src="assets/gunung_rinjani.jpg" alt="" width="400" height="300" />
+            <img src="assets/gunung_rinjani.jpg" alt="" width="400px" height="300px" />
             <div class="obj-desc">
               <p style="text-align: center; margin-bottom: 10px; color: white; font-weight: bold; font-size: 18px">Rinjani Mountain</p>
               <a href="https://www.google.com/maps/place/Gn.+Rinjani/@-8.4112737,116.448594,15z/data=!4m5!3m4!1s0x2dcc2d800216cccf:0x3c03cdbf11d30a1e!8m2!3d-8.4112952!4d116.4573488!5m1!1e4">
@@ -145,8 +152,8 @@
       <div class="objects">
         <p style="text-align: center; margin-bottom: 10px; color: white; font-weight: bold; font-size: larger" id="beach"><i class="fa-solid fa-water"></i> Nusantara's Beach</p>
         <div class="objects-container">
-          <div class="objects-item">
-            <img src="assets/pantai_kuta.jpg" alt="" width="400" height="300" id="kuta" />
+          <div class="objects-item" id="kuta">
+            <img src="assets/pantai_kuta.jpg" alt="" width="400px" height="300px"  />
             <div class="obj-desc">
               <p style="text-align: center; margin-bottom: 10px; color: white; font-weight: bold; font-size: 18px">Kuta Beach</p>
               <a href="https://www.google.com/maps/place/Pantai+Kuta/@-8.7180112,115.1592798,15z/data=!3m1!4b1!4m5!3m4!1s0x2dd246bc2ab70d43:0x82feaae12f4ab48e!8m2!3d-8.7184926!4d115.1686322!5m1!1e4">
@@ -159,7 +166,7 @@
             </div>
           </div>
           <div class="objects-item">
-            <img src="assets/pantai_kelingkingbali.jpg" alt="" width="400" height="300" />
+            <img src="assets/pantai_kelingkingbali.jpg" alt="" width="400px" height="300px" />
             <div class="obj-desc">
               <p style="text-align: center; margin-bottom: 10px; color: white; font-weight: bold; font-size: 18px">Kelingking Beach</p>
               <a href="https://www.google.com/maps/place/Kelingking+Beach+Nusa+Penida/@-8.7503812,115.4704331,17z/data=!4m5!3m4!1s0x2dd26f1616cd2cc7:0xee84b7df0afbff19!8m2!3d-8.7503865!4d115.4726218!5m1!1e4">
@@ -171,8 +178,8 @@
               >
             </div>
           </div>
-          <div class="objects-item">
-            <img src="assets/pantai_gili.jpg" alt="" width="400" height="300" id="gili" />
+          <div class="objects-item" id="gili">
+            <img src="assets/pantai_gili.jpg" alt="" width="400px" height="300px"  />
             <div class="obj-desc">
               <p style="text-align: center; margin-bottom: 10px; color: white; font-weight: bold; font-size: 18px">Gili Trawangan Beach</p>
               <a href="https://www.google.com/maps/place/Gili+Trawangan/@-8.3502879,116.0274514,15z/data=!3m1!4b1!4m5!3m4!1s0x2dcde0ab4ff1579f:0xfcea7c174732d4b2!8m2!3d-8.3482917!4d116.0384335!5m1!1e4">
@@ -189,9 +196,9 @@
       <br /><br /><br />
       <div class="objects">
         <p style="text-align: center; margin-bottom: 10px; color: white; font-weight: bold; font-size: larger" id="waterfall"><i class="fa-solid fa-droplet"></i> Nusantara's Waterfalls</p>
-        <div class="objects-container">
+        <div class="objects-container" id="tegenungan">
           <div class="objects-item">
-            <img src="assets/waterfall_tegenunganbali.jpg" alt="" width="400" height="300" id="tegenungan" />
+            <img src="assets/waterfall_tegenunganbali.jpg" alt="" width="400px" height="300px"  />
             <div class="obj-desc">
               <p style="text-align: center; margin-bottom: 10px; color: white; font-weight: bold; font-size: 18px">Tegenungan Waterfall</p>
               <a href="https://www.google.com/maps/place/Air+Terjun+Tegenungan/@-8.5753453,115.2845498,17z/data=!3m1!4b1!4m5!3m4!1s0x2dd2161beebd0c61:0xc1ae79ddb8410c5e!8m2!3d-8.5753134!4d115.2887691!5m1!1e4">
@@ -204,7 +211,7 @@
             </div>
           </div>
           <div class="objects-item">
-            <img src="assets/waterfall_srigethuk.jpg" alt="" width="400" height="300" />
+            <img src="assets/waterfall_srigethuk.jpg" alt="" width="400px" height="300px" />
             <div class="obj-desc">
               <p style="text-align: center; margin-bottom: 10px; color: white; font-weight: bold; font-size: 18px">Sri Gethuk Waterfall</p>
               <a href="https://www.google.com/maps/place/Air+Terjun+Sri+Gethuk/@-7.9428521,110.4871372,17z/data=!3m1!4b1!4m5!3m4!1s0x2e7a52c5a2ffbded:0x1b21536ea267bf1!8m2!3d-7.943178!4d110.48924!5m1!1e4">
@@ -217,7 +224,7 @@
             </div>
           </div>
           <div class="objects-item">
-            <img src="assets/waterfall_sendanggile.jpg" alt="" width="400" height="300" />
+            <img src="assets/waterfall_sendanggile.jpg" alt="" width="400px" height="300px" />
             <div class="obj-desc">
               <p style="text-align: center; margin-bottom: 10px; color: white; font-weight: bold; font-size: 18px">Sendanggile Waterfall</p>
               <a
@@ -240,9 +247,9 @@
  
     <br><br>
     <!-- NEWS -->
-    <div class="news">
+    <div class="news" id="news">
       <p style="text-align: center; margin-bottom: 10px; color: white; font-weight: bold; font-size: larger" id="mountain"><i class="fa-solid fa-newspaper" style="color: white;"></i> News</p><br>
-      <div class="news-content" id="news">
+      <div class="news-content" >
         <div class="news-item">
           <img src="assets/news1.jpg" alt="" width="300px" height="200px">
           <p>15 Wisata Alam di Semarang, Cocok untuk Libur Panjang</p><br>
@@ -269,12 +276,15 @@
           </div>
       </div>
     </div>
-  </div><br><br><br>
-  <div class="footer">
-    <div class="footer-content">
-      Created by <a href="https://www.instagram.com/hanip_yokkk/">Hanif Aji Prasetyo <i class="fa-brands fa-instagram"></i></a>
-    </div>
+    
   </div>
+ 
+    <div class="footer">
+      <div class="footer-content">
+        Created by <a href="https://www.instagram.com/hanip_yokkk/">Hanif Aji Prasetyo <i class="fa-brands fa-instagram" style="color: pink;"></i></a>
+      </div>
+    </div>
+    
     <script src="script.js"></script>
   </body>
 </html>

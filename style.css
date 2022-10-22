@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -8,51 +11,37 @@ html * {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 body {
-  height: 100%;
   background-image: url("assets/bg2.jpg");
-  min-height: 500px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-body::-webkit-scrollbar {
-  display: none;
+img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
 }
 
 .navbar {
   width: 100%;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.7);
   position: fixed;
   padding-top: 10px;
   padding-bottom: 7px;
   top: 0;
-  display: flex;
-}
-
-@media (max-width: 800px) {
-  .navbar {
-    margin-bottom: 20px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
-
-.nav-menu,
-.dd-btn,
-.dropdown-content a {
-  font-weight: bolder;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .logo {
   float: left;
-  text-align: center;
-  margin-top: auto;
   margin-left: 100px;
-  font-weight: bold;
   font-size: larger;
   padding: 14px;
   border-radius: 7px;
@@ -72,8 +61,7 @@ body::-webkit-scrollbar {
 .nav-menu {
   display: flex;
   align-items: center;
-  margin-right: 80px;
-  margin-left: auto;
+  justify-content: center;
 }
 
 .nav {
@@ -85,10 +73,7 @@ body::-webkit-scrollbar {
 
 .nav,
 .dropbtn,
-.dropdown-content a {
-  color: #57ff7b;
-}
-
+.dropdown-content a,
 .dropbtn i,
 .nav-menu i {
   color: #57ff7b;
@@ -149,14 +134,6 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-.mySlides img,
-.objects-item img,
-.panel-content img,
-.news-item img {
-  border-radius: 8px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
-}
-
 .slideshow-container {
   box-sizing: border-box;
   max-width: 950px;
@@ -210,7 +187,7 @@ body::-webkit-scrollbar {
 }
 
 .panel-content .object {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   margin-top: 10px;
 }
 
@@ -247,32 +224,6 @@ body::-webkit-scrollbar {
   text-decoration: none;
 }
 
-.title {
-  color: #eeeeee;
-  font-size: 12px;
-  font-weight: bold;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  bottom: 5px;
-  left: 0;
-  right: 0;
-  padding: 5px;
-}
-
-@media (max-width: 800px) {
-  .title {
-    left: 145px;
-    right: 145px;
-  }
-}
-
-.title:hover {
-  transition: 0.6s ease-in-out;
-  text-shadow: 3px 3px 6px #16ff5c;
-  color: aqua;
-}
-
 /* POST */
 .post {
   margin-top: 10px;
@@ -286,8 +237,6 @@ body::-webkit-scrollbar {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 @media (max-width: 800px) {
@@ -295,6 +244,11 @@ body::-webkit-scrollbar {
     flex-direction: column;
     margin-bottom: 20px;
     width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .objects-item {
+    margin-bottom: 10px;
   }
 }
 
@@ -303,14 +257,18 @@ body::-webkit-scrollbar {
   background-color: rgba(0, 0, 0, 0.7);
   padding: 22px;
   border-radius: 7px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .obj-desc {
   text-align: left;
   font-size: 17px;
+  font-weight: light;
 }
 .obj-desc a,
-.news-item a {
+.news-item a,
+.pop-title {
   text-decoration: none;
   color: white;
 }
@@ -335,11 +293,14 @@ i {
   border-radius: 7px;
   padding: 60px;
 }
+
 .news-content {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-evenly;
 }
+
 @media (max-width: 800px) {
   .news-content {
     flex-direction: column;
@@ -348,15 +309,22 @@ i {
     margin-right: auto;
     margin-left: auto;
   }
+  .news-item {
+    margin-bottom: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 .news-content p {
   color: #eeeeee;
   font-weight: bold;
   text-align: center;
+  font-weight: light;
 }
 
 .news-text {
   text-align: justify;
+  font-weight: light;
 }
 
 .news-item {
@@ -378,18 +346,20 @@ i {
 .footer {
   width: 100%;
   text-align: center;
+  padding: 30px;
+  margin-top: 50px;
   background-color: rgba(0, 0, 0, 0.7);
-  padding: 20px;
-  bottom: 0;
 }
 
 .footer-content {
   color: white;
-  font-weight: bold;
+  font-weight: bolder;
   text-align: center;
+  letter-spacing: 3px;
 }
 
 .footer-content a {
+  bottom: 0;
   color: #16ff5c;
   text-decoration: none;
 }
@@ -399,5 +369,5 @@ i {
 
 .footer-content a:hover {
   transition: 0.6s ease-in-out;
-  color: rgb(255, 74, 113);
+  color: pink;
 }
