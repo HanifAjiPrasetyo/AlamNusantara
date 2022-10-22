@@ -59,8 +59,9 @@ img {
 }
 
 .nav-menu {
+  max-width: 50%;
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
 }
 
@@ -359,15 +360,27 @@ i {
 }
 
 .footer-content a {
-  bottom: 0;
-  color: #16ff5c;
+  color: white;
   text-decoration: none;
 }
-.footer-content i {
-  color: rgb(255, 74, 113);
-}
 
-.footer-content a:hover {
+.ig a:hover {
   transition: 0.6s ease-in-out;
   color: pink;
+}
+
+.wa a:hover {
+  transition: 0.6s ease-in-out;
+  color: #25d366;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact li {
+  list-style-type: none;
 }
